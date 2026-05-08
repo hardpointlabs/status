@@ -18,6 +18,6 @@
     "hono": "^4.12.18"
   },
   "devDependencies": {
-    "typescript": "^5"
+    "typescript": "^6"
   }
 }
