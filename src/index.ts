@@ -27,6 +27,8 @@ app.get('/', async (c) => {
   const redis = createClient({ socket: { path: tunnel.path, tls: false } })
   await redis.connect()
   const val = await redis.incr("foo")
+  await redis.incr("something")
+  await redis.incr("else")
   return c.text(`Hits: ${val}`)
 })
 
